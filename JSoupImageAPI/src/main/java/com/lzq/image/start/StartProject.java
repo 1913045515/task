@@ -64,7 +64,6 @@ public class StartProject {
                 resultMap.put("hotelId", hotelId);
                 resultList.add(resultMap);
             }
-            System.out.println(resultList.size());
             if(resultList.size()!=0){
                 TheardHelper.createThreadAndStart(resultList, downloadPath);
             }
